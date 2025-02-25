@@ -26,29 +26,10 @@ Find me on [GitHub](https://github.com/johnsamuelsterling) and [LinkedIn](https:
 
 {:.no-list}
 * <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-* Parker Hall, Office 142</a>
+* Parker Hall, Office 142
 </div>
 </div>
 
-## Featured <a href="{{ "/publications/" | relative_url }}">Publications</a>
 
-<div class="featured-publications">
-  {% assign sorted_publications = site.publications | sort: 'year' | reverse %}
-  {% for pub in sorted_publications %}
-    {% if pub.highlight %}
-      <a href="{{ pub.pdf }}" class="publication">
-        <strong>{{ pub.title }}</strong>
-        <span class="authors">{% for author in pub.authors %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>.
-        <i>{% if pub.venue %}{{ pub.venue }}, {% endif %}{{ pub.year }}</i>.
-        {% for award in pub.awards %}<br/><span class="award"><i class="fas fa-{% if award == "Best Paper Award" %}trophy{% else %}award{% endif %}" aria-hidden="true"></i> {{ award }}</span>{% endfor %}
-      </a>
-    {% endif %}
-  {% endfor %}
-</div>
-
-<a href="{{ "/publications/" | relative_url }}" class="button">
-  <i class="fas fa-chevron-circle-right"></i>
-  Show All Publications
-</a>
 
 
