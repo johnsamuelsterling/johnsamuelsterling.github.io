@@ -28,6 +28,7 @@ Find me on [GitHub](https://github.com/johnsamuelsterling) and [LinkedIn](https:
 * <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 * Parker Hall, Office 142
 </div>
+</div>
 
 ## Featured <a href="{{ "/publications/" | relative_url }}">Publications</a>
 
