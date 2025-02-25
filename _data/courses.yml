@@ -1,33 +1,34 @@
-- title: University of Washington
+- title: Auburn University
   courses:
-    - title: Distributed Systems
-      with: Tom Anderson
-    - title: Data Visualization
-      with: Jeffrey Heer
-    - title: Programming Languages
-      with: Zach Tatlock
-    - title: Databases
-      with: Magdalena Balazinska
-    - title: Computer Vision
-      with: Ali Farhadi
-    - title: Machine Learning
-      with: Sham Kakade
-    - title: Statistical Methods for Machine Learning
-      with: Pedro Domingos
-    - title: Constraint Programming
-      with: Alan Borning
-    - title: User Studies
-      with: Mike Ernst
-- title: University of Potsdam
+    - title: Homological Algebra
+      with: Prashanth Sridhar
+    - title: Commutative Algebra
+      with: Michael Brown
+    - title: Graduate Algebra II
+      with: Huajun Huang
+    - title: Graduate Algebra I
+      with: Huajun Huang
+    - title: Graduate Real Analysis II
+      with: Yuming Zhang
+    - title: Graduate Real Analysis I
+      with: Yuming Zhang
+    - title: Graduate Topology II
+      with: Michel Smith
+    - title: Topology I
+      with: Hannah Alpert
+- title: The University of Alabama in Huntsville
   courses:
-    - title: Declarative Problem Solving
-    - title: Applied Logic
-    - title: Artificial Intelligence
-- title: Hasso Plattner Institute
-  courses:
-    - title: Databases I and II
-    - title: Designing Interactive Systems
-    - title: Computer Graphics
-    - title: Software Engineering
-    - title: Operating Systems
-    - title: Computational Geometry
+    - title: Category Theory
+      with: Jonathan Patrick
+    - title: Abstract Algebra
+      with: Jonathan Patrick
+    - title: Real Analysis
+      with: Wenzhang Huang
+    - title: Combinatorial Enumeration
+      with: Guo-Hui Zhang
+    - title: Math Modeling
+      with: Sivaguru Ravindran
+    - title: Number Theory
+      with: Guo-Hui Zhang
+    - title: Probability and Statistics
+      with: Dongsheng Wu
