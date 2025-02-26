@@ -1,0 +1,232 @@
+#- id: draco
+#  title: "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco"
+#  year: 2018
+#  authors:
+#    - Dominik Moritz
+#    - Chenglong Wang
+#    - Greg L. Nelson
+#    - Halden Lin
+#    - Adam M. Smith
+#    - Bill Howe
+#    - Jeffrey Heer
+#  awards:
+#    - Best Paper Award
+#  venue: InfoVis
+#  venue_tags:
+#    - VIS
+#    - InfoVis
+#  venue_location: Berlin, Germany
+#  venue_url: http://ieeevis.org/year/2018/welcome
+#  doi: 10.1109/TVCG.2018.2865240
+#  short_doi: 10/cs68
+#  pdf: /papers/2018-Draco-InfoVis.pdf
+#  recording: https://vimeo.com/308980888
+#  link: https://uwdata.github.io/draco/
+#  tweet: Draco models visualization guidelines as logical constraints. Shareable design guidelines, formal reasoning, vis recommendation & more.
+#  blog: https://medium.com/@uwdata/64ce20287e9d
+#  slides: /talks/Draco-Infovis-2018.pdf
+#  osf: 3eg9c
+#  highlight: true
+#  tags:
+#    - Machine Learning
+#    - Recommendation
+#    - Visualization
+#    - Vega-Lite
+#  type:
+#    - Conference
+#    - Journal
+
+#- id: GradedUltraproducts
+#  title: Ultraproducts of Graded Algebras
+#  year: 2025
+#  authors:
+#    - John Cobb
+#    - Nathaniel Gallup
+#    - John Spoerl
+#  venue:
+#  pdf:
+#  arxiv:
+  #highlight: true 
+#  description: A common argument for establishing bounds within commutative algebra is the construction of a "limiting polynomial ring" that allows one to trade asymptotic behavior over many polynomial rings for exact behavior in the limit ring. We define a degree bounded ultraproduct that packages this argument up and establish several strong properties about it using its unique position within logic. We give several out-of-the-box algebraic tools to use on such rings.
+#  tags:
+#    - Logic
+#    - Commutative Algebra
+#  type:
+#    - In Progress
+  
+- id: LikelihoodGeometryM2
+  title: "LikelihoodGeometry: Macaulay2 package"
+  year: 2024
+  authors:
+    - David Barnhill
+    - John Cobb
+    - Matthew Faust
+  venue: Submitted
+  pdf: https://arxiv.org/pdf/2411.11165
+  arxiv: "2411.11165"
+  description: A Macaulay2 package for computing the likelihood correspondence of statistical models.
+  link: https://github.com/johndcobb/LikelihoodGeometry
+  tags:
+    - Macaulay2
+    - Toric Varieties
+    - Algebraic Statistics
+    - Commutative Algebra
+  type:
+    - Preprint
+
+- id: MultigradedStillman
+  title: Multigraded Stillman's Conjecture
+  year: 2024
+  authors:
+    - John Cobb
+    - Nathaniel Gallup
+    - John Spoerl
+  venue: Submitted
+  pdf: https://arxiv.org/pdf/2406.09593
+  arxiv: "2406.09593"
+  highlight: true 
+  description: In 2000, Mike Stillman conjectured that the projective dimension of a homogeneous ideal in a standard graded polynomial ring can be bounded just in terms of the number and degrees of the generators. We resolve Stillman's conjecture for families of polynomial rings that are graded by any abelian group under mild conditions. Conversely, we show that these conditions are necessary for the existence of a Stillman bound. 
+  tags: 
+    - Syzygies
+    - Toric Varieties
+    - Commutative Algebra
+  type:
+    - Preprint
+  
+  
+- id: LikelihoodGeometry
+  title: Likelihood Correspondence of Toric Statistical Models
+  year: 2023
+  authors:
+    - David Barnhill
+    - John Cobb
+    - Matthew Faust
+  venue: Submitted
+  pdf: https://arxiv.org/pdf/2312.08501
+  arxiv: "2312.08501"
+  link: https://github.com/johndcobb/LikelihoodGeometry
+  description: Characteristics of the maximum likelihood estimation problems are reflected in the geometry of a variety called the likelihood correspondence. We construct the ideal of this variety for some popular examples of statistical models.
+  tags:
+    - Toric Varieties
+    - Algebraic Statistics
+    - Commutative Algebra
+  type: 
+    - Preprint
+
+
+- id: SheafDiffusion
+  title: Extending Transductive Knowledge Graph Embedding Models for Inductive Logical Relational Inference
+  year: 2023
+  authors:
+    - Thomas Gebhart
+    - John Cobb
+  venue: Submitted
+  pdf: https://arxiv.org/pdf/2309.03773.pdf
+  link: https://github.com/tgebhart/sheaf_kg_transind
+  arxiv: "2309.03773"
+  description: We utilize a sheaf-theoretic technique to optimally extend vector representations of old entities in knowledge graphs to previously unseen entities. This technique also gives an efficient way of predicting facts about these new entities and compares well to other more complicated state-of-the-art inductive reasoning methods.
+  type: 
+    - Preprint
+  tags:
+    - Machine Learning
+    - Knowledge Graphs
+
+- id: MultiregularityOfCurves
+  title: "Syzygies of Curves in Products of Projective Spaces"
+  year: 2023
+  authors: 
+    - John Cobb
+  venue: Mathematische Zeitschrift
+  venue_url: https://link.springer.com/journal/209
+  venue_tags:
+    - Math. Z.
+  doi: 10.1007/s00209-023-03422-3
+  short_doi: 10/mcmh
+  arxiv: "2301.05979"
+  pdf: https://arxiv.org/pdf/2301.05979.pdf
+  highlight: true
+  description: Motivated by toric geometry, we lift machinery for understanding syzygies of curves in projective space to the setting of products of projective spaces. Using this machinery, we show an analogue of an influential result of Gruson, Peskine, and Lazarsfeld that gives a bound on the regularity of a possibly singular curve given its degree and the dimension of the ambient projective space.
+  type: 
+    - Journal
+  tags: 
+    - Virtual Resolutions
+    - Toric Varieties
+    - Syzygies
+
+- id: VirtualENComplexes
+  title: "Virtual Criterion for Generalized Eagon-Northcott Complexes"
+  year: 2021
+  authors:
+    - Caitlyn Booms
+    - John Cobb
+  pdf: https://arxiv.org/pdf/2111.13773.pdf
+  arxiv: "2111.13773"
+  venue: Journal of Pure and Applied Algebra
+  venue_url: https://www.journals.elsevier.com/journal-of-pure-and-applied-algebra
+  venue_tags: 
+    - JPAA
+  doi: 10.1016/j.jpaa.2022.107138
+  short_doi: 10/hv9r
+  description: Any matrix gives rise to an associated family of canonical complexes associated to it, including the Eagon-Northcott and Buchsbaum-Rim. Famously, there is a simple criterion for checking the exactness of these complexes. We give generalization of this criterion for these complexes to be *virtual resolutions*, which are "exact enough" to be relevant to the geometry of toric varieties.
+  tags:
+    - Virtual Resolutions
+    - Syzygies
+    - Toric Varieties
+    - Commutative Algebra
+  type:
+    - Journal
+
+- id: QKdV
+  title: "Quarternion-Valued Breather Soliton, Rational, and Periodic QKdV Solutions"
+  year: 2020
+  authors:
+    - John Cobb
+    - Alex Kasman
+    - Albert Serna
+    - Monique Sparkman
+  venue: Journal of Nonlinear Mathematical Physics
+  venue_url: https://www.tandfonline.com/toc/tnmp20/current
+  doi: 10.1080/14029251.2020.1757234
+  short_doi: 10/dtqz
+  venue_tags:
+     - J. Nonlinear Math. Phys.
+  pdf: https://arxiv.org/pdf/1911.04861.pdf
+  arxiv: "1911.04861"
+  description: The KdV equation is a prototypical example of an exactly solvable PDE, due in part to its admittance of soliton solutions. This paper examines and classifies the dynamics of quaternion-valued solutions of the noncommutative KdV equation.
+  tags:
+    - Integrable Systems
+    - Mathematical Physics
+  type:
+    - Journal
+    
+- id: P3HT
+  title: "Aggregate Dispersions to Enhance the Intrachain Order in Surfactant-Stabilized Aqueous Colloids of Poly(3-hexylthiophene)"
+  year: 2019
+  authors:
+    - McKenna Andrews
+    - Anna Smirnova
+    - Devin Sharp
+    - Sarah Taylor
+    - John Cobb
+    - David Boucher
+  venue: Journal of Molecular Liquids
+  venue_tags:
+    - J. Mol. Liq.
+  venue_url: https://www.journals.elsevier.com/journal-of-molecular-liquids
+  doi: 10.1016/j.molliq.2019.01.031
+  short_doi: 10/dsxc
+  pdf: /papers/P3HTpaper.pdf
+  tags:
+    - Physical Chemistry
+  type:
+    - Journal
+  
+- id: bachelor-thesis
+  title: "Quaternion-Valued KdV Solutions"
+  year: 2019
+  description: My bachelor thesis.
+  authors:
+    - John Cobb
+  pdf: /papers/QKdVSolitons.pdf
+#  type:
+#    - Thesis
