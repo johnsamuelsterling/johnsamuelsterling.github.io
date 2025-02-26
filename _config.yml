@@ -12,6 +12,10 @@ permalink: /blog/:year/:month/:title.html
 sass:
   style: compressed
 
+collections:
+publications:
+  output: false
+
 plugins:
   - jekyll-sitemap
   - jekyll-feed
