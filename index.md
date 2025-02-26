@@ -20,7 +20,7 @@ Find me on [GitHub](https://github.com/johnsamuelsterling) and [LinkedIn](https:
 <picture>
   <source srcset='/images/JohnCoffeeAU.webp' type='image/webp' />
   <img
-    src='/images/JohnCoffeeAU.jpg'
+    src='/images/JohnCoffeeAU.png'
     alt='John Sterling'>
 </picture>
 
