@@ -1,5 +1,9 @@
 # Website
 
+```
+This website is based on Dominik Moritz's design (https://github.com/domoritz/domoritz.github.io). Additionally, it takes inspiration from John Cobb's alterations to the prexisting template (https://github.com/johndcobb/johndcobb.github.io).
+```
+
 ## Write
 
 ```
