@@ -1,26 +1,44 @@
-- title: "Calculus I"
+- title: "MATH 1610: Calculus I"
+  role: "Recitation Leader"
+  year: Spring 2025
+  type: Past
+  panel: true
+  highlight: 1
+  image: calculus1.jpg
+  url: "/teaching/217Spring2024"
+  professor: Samir Raouafi
   location: Auburn University
-  role: Recitation Leader
-  year: 2025
-  students: 70 students
-  description: Hold recitation and problem solving sessions.
-- title: "College Algebra"
-  location: Auburn University
+  description: This page organizes calculus I discussion sections 304 and 305 running in Spring 2024.
+  roledescription: Hold recitation sessions twice a week as well as office hours.
+- title: "MATH 1000: College Algebra"
+  panel: true
+  type: Past
   role: Instructor
-  year: 2024
-  students: 60 students
-  description: Prepared and taught lectures. Prepared and graded assignments.
-- title: "Linear Algebra"
+  year: Fall 2024
   location: Auburn University
+  url: "/teaching/234Spring2023"
+  image: calculus3.jpg
+  description: This page organizes calculus III discussion sections 343 and 345 running in Spring 2023.
+  roledescription: Prepared and taught lectures. Created and graded assignments.
+- title: "MATH 2660: Linear Algebra"
+  panel: false
+  type: Past
   role: Teaching Assistant
-  year: 2024
-  students: 150 students
-  description: Hold weekly problem solving sessions and office hours.
-- title: "Precalculus Algebra"
+  professor: Douglas Leonard
+  year: Spring 2024
   location: Auburn University
+  url: "/teaching/234Fall2022"
+  image: calculus3.jpg
+  description: This page organizes calculus III discussion sections 369 and 370 running in Fall 2022.
+  roledescription: Hold weekly problem solving sessions and office hours.
+- title: "MATH 1120: Precalculus Algebra"
+  panel: true
+  professor: Chris Wells
+  type: Past
   role: Teaching Assistant
-  year: 2023
-  students: 200 students
-  description: Hold weekly problem solving sessions and office hours.
-
-
+  year: Fall 2023
+  location: Auburn University
+  url: "/teaching/221Fall2021"
+  image: calculus1.jpg
+  description: This page organizes calculus discussion sections running in Fall 2021.
+  roledescription: Hold weekly problem solving sessions and office hours.
