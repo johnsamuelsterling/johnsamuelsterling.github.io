@@ -72,7 +72,7 @@ title: CV
     <span class="line"></span>
   </div>
 
-  {% assign awards = site.data.awards | concat: site.data.grants | sort: 'years' | reverse %}
+  {% assign awards = site.data.awards | sort: 'years' | reverse %}
   {% for award in awards %}{% if award.hide == nil %}
   <div class="date-container">
     <span class="date">{{ award.years }}</span>
