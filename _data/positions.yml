@@ -1,12 +1,9 @@
-- title: Mathematics Graduate Teaching Assistant
-  years: 2023-present
-  company: Auburn University
-  location: Auburn, AL
 - title: Research Associate I, Step I
   years: 2022-2022
   company: UAH Rotorcraft System Engineering and Simulation Center
   location: Huntsville, AL
-  skills:
-    - SysML
+  mentors:
+    -Jonathan Patrick
+  description: "Utilized python integration in large scale SysML models for financial optimization."
 
 
