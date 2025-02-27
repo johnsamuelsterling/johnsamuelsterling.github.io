@@ -160,8 +160,8 @@ title: CV
   <div class="no-break">
     <div class="date-container"></div>
     <span class="date"> {% for class in title.items %} {{ class.year | replace: "-", "–"  }}</span>
-    <h3 style="margin-left: 90px">{{ title.name }}</h3> 
-      <br> {% endfor %} 
+    <h3 style="margin-left: 90px">{{ title.name }}<br>.
+      {% endfor %} 
       <span style="flex: 1"> {{ recentcourse.role }}. {{ recentcourse.roledescription}} </span>
       <span class="right">{{ recentcourse.location }}</span>
     </div>
