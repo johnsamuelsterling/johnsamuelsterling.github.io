@@ -157,10 +157,9 @@ title: CV
   {% assign coursetitles = site.data.teaching | group_by: "title" %} 
   {% for title in coursetitles %}
   {% assign recentcourse = title.items[-1] %}
-  <div class="no-break">
-    <div class="date-container">
+  <div class="date-container">
     <span class="date"> {% for class in title.items %} {{ class.year | replace: "-", "–"  }}</span>
-    <h3 style="margin-left: 90px">{{ title.name }}<br>
+    <h3>{{ title.name }}<br>
       {% endfor %} 
       <span style="flex: 1"> {{ recentcourse.role }}. {{ recentcourse.roledescription}} </span>
       </h3>
@@ -253,48 +252,6 @@ title: CV
   {% endif %}
   {% endfor %}
   {% endcomment %}
-
-  <div class="line-container">
-    <h2>Organizing</h2>
-    <span class="line"></span>
-  </div>
-
-  
-  <h3 class="pub-type">Conferences & Seminars</h3>
-
-  {% for meeting in site.data.organizing %}
-    {% if meeting.type=='Conference' or meeting.type=='Seminar' %}
-    {% if meeting.hide==nil %}
-      <div class="date-container">
-        <span class="date">{{meeting.dates | replace: "-", "–" }}</span>
-        <span style="flex: 1">{{ meeting.title}}, <small class="muted"> <em>{{ meeting.location }}</em> </small> </span>
-        {% if meeting.url %}
-      <div class="extra-links">
-        <a href="{{ meeting.url }}"><i class="fas fa-link" aria-hidden="true"></i> Website</a>
-      </div>
-    {% endif %} 
-      </div>
-    {% endif %}
-    {% endif %}
-  {% endfor %}
-
-  <h3 class="pub-type">Reading Groups</h3>
-
-  {% for group in site.data.organizing %}
-    {% if group.type=='Reading Group' %}
-    {% if group.hide==nil %}
-      <div class="date-container">
-        <span class="date">{{group.dates | replace: "-", "–" }}</span>
-        <span style="flex: 1">{{ group.title }}, <small class="muted"> <em>{{ group.location }}</em> </small> </span>
-        {% if group.url %}
-      <div class="extra-links">
-        <a href="https://johndcobb.github.io{{ group.url }}"><i class="fas fa-link" aria-hidden="true"></i> Website</a>
-      </div>
-    {% endif %} 
-      </div>
-    {% endif %}
-    {% endif %}
-  {% endfor %}
 
 
   <div class="line-container">
