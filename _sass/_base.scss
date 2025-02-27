@@ -1,10 +1,7 @@
-@use "sass:color";
-@use "_vars" as *;
-
 /**
  * Basic styling
  */
-html, body {
+ html, body {
   width: 100%;
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -19,7 +16,8 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  color: color.adjust($text-color, $lightness: -10%);
+  font-weight: $base-font-weight;
+  color: $text-color;
   background-color: $background-color;
 
   text-rendering: optimizeLegibility;
@@ -37,9 +35,10 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  text-wrap: pretty;
-}
 
+  // nicer text underlines
+  text-decoration-skip: ink;
+}
 
 
 /**
@@ -79,6 +78,8 @@ img {
  * Hyphenation and paragraph styles
  */
 p {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
   hyphens: auto;
 }
 
@@ -92,9 +93,9 @@ figure > img {
 }
 
 figcaption {
-  margin-top: 0.5rem;
+  margin-top: 0.5em;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.1em;
 }
 
 
@@ -172,7 +173,7 @@ pre {
   padding: 1rem;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   line-height: 1.4rem;
 
   > code {
@@ -190,7 +191,7 @@ pre {
  * Text styling
  */
 strong, b {
-  font-weight: 600;
+  font-weight: $bold-font-weight;
 }
 
 
@@ -206,7 +207,83 @@ iframe {
 /* Content */
 
 .lead {
-  font-size: 1.3rem;
+  font-size: 1.3em;
+}
+
+
+/* 
+ * Button Dropdown behavior
+*/
+
+.button, .dropdown-button{
+  color: $brand-color;
+  padding: 6px 16px;
+  border-radius: 3px;
+  border: 1px solid lighten($brand-color, 20%);
+  cursor: pointer;
+
+  &:hover{
+    opacity: 1;
+    text-decoration: none;
+    background-color: lighten($brand-color, 50%);
+  }
+}
+
+
+.press{
+  opacity: 1;
+  text-decoration: none;
+  background-color: lighten($brand-color, 50%);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 3px;
+  text-align: left;
+  background-color: $background-color;
+  width:100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 6px 16px;
+  color: lighten($brand-color, 20%) !important;
+  background-color: $background-color;
+  text-decoration: none;
+  display: block;
+
+  &:hover{
+    background-color: $background-color;
+  }
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+}
+
+@include media-query($on-palm) {
+  .button, .dropdown-button {
+    font-size: 1.1em;
+    background-color: lighten($brand-color, 57%);
+  }
+
+  .button-container {
+    .button, .dropdown-button {
+      display: grid;
+    }
+  }
 }
 
 /* Print */
