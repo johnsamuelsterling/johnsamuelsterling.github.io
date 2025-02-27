@@ -115,7 +115,7 @@ title: CV
   {% for year in talkyears %}
 
  {% assign sorted_talks = year.items %}
-  {% for talk in sorted_talks %}{% if talk.hide==nil%}-->
+  {% for talk in sorted_talks %}{% if talk.hide==nil%}
   <div class="date-container">
     {% if forloop.first %} <time datetime="{{ talk.date }}">{{ talk.date | date: "%Y %b" }}</time> {% else %} <time datetime="{{ talk.date }}">{{ talk.date | date: "%b" }}</time> {% endif %} 
     <span class="fill">{{ talk.location }}{% if talk.city %}, <small class="muted">{{ talk.city }}</small>{% endif %}</span>
@@ -124,7 +124,7 @@ title: CV
   {% endfor %}
   {% endif %}
   {% endfor %}
-
+-->
   {% comment %}
   {% assign talktitles = site.data.talks | group_by:"title" %}
   {% for title in talktitles %}{% if title.items[0].hide == nil %}
