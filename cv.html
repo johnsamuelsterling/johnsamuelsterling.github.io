@@ -263,7 +263,7 @@ title: CV
     <span class="line"></span>
   </div>
 
-
+<!--
   {% for service in site.data.service %}
   {% if service.hide==nil %}
   <div class="no-break">    
@@ -277,8 +277,22 @@ title: CV
   {% unless forloop.last %}<br/>{% endunless %}
   {% endif %}
   {% endfor %}
-
-
+-->
+{% for service in site.data.service %}
+{% if service.hide==nil %}
+<div class="no-break" style="display: flex; justify-content: space-between; align-items: center; margin-left: 90px;">
+  <h3 style="margin: 0;">
+    {{ service.title }}{% if service.at %} at {{ service.at }}{% endif %}
+  </h3>
+  <span class="date">{{ service.years | replace: "-", "–" }}</span>
+</div>
+<div class="service-details">
+  <span style="flex: 1">{{ service.description }}</span>
+  <span class="right">{{ service.location }}</span>
+</div>
+{% unless forloop.last %}<br/>{% endunless %}
+{% endif %}
+{% endfor %}
 
 <br> 
 </section>
