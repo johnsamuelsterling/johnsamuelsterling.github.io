@@ -1,5 +1,3 @@
-@use "_vars" as *;
-
 #facets {
   display: flex;
   flex-direction: row;
@@ -11,13 +9,13 @@
   }
 
   .facet {
-    min-width: 125px;
-    flex-grow: 1;
-    flex-basis: 0;
-
     &:not(:last-child) {
       margin-right: 12px;
     }
+
+    min-width: 125px;
+    flex-grow: 1;
+    flex-basis: 0;
   }
 
   ul {
@@ -35,7 +33,7 @@
 
       &.in-query {
         color: black;
-        font-weight: 500;
+        font-weight: $bold-font-weight;
       }
 
       & > span {
@@ -85,7 +83,7 @@
 
 #clear-filters {
   color: $grey-color-dark;
-  font-weight: 500;
+  font-weight: $bold-font-weight;
   cursor: pointer;
 
   &:hover {
@@ -135,7 +133,7 @@
     h3 {
       font-size: 1.2em;
       margin: 0em;
-      font-weight: 500;
+      font-weight: $bold-font-weight;
 
       max-height: 600px;
       overflow: hidden;
@@ -150,7 +148,7 @@
       font-size: 1.2em;
 
       &.fa-trophy {
-        color: $yellow-color;
+        color: #ffc000;
       }
 
       &.fa-award {
@@ -173,11 +171,11 @@
 
     .awards {
       margin-top: 0.1em;
-      font-weight: 500;
+      font-weight: $bold-font-weight;
       color: firebrick;
     }
 
-    .share {
+    .tweet {
       &:hover {
         text-decoration: none;
 
@@ -204,11 +202,6 @@
       a {
         margin-right: 1em;
         white-space: nowrap;
-
-        // avoid the extra whitespace after the link text
-        display: inline-block;
-
-        border-bottom: 1px solid transparent;
 
         &:hover {
           text-decoration: none;

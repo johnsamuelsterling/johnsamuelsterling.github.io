@@ -1,10 +1,8 @@
-@use "_vars" as *;
-
 /**
  * Layout classes
  */
 
-.container {
+.container, .button-container {
   max-width: $content-width + 2 * $spacing-unit;
   margin: 0 auto;
   padding: 0 $spacing-unit;
@@ -26,5 +24,13 @@
     max-width: $content-width + $spacing-unit;
     margin: 0 auto;
     padding: 0 calc($spacing-unit/2);
+  }
+  .button-container {
+    display: grid;
+    max-width: $content-width + $spacing-unit;
+    margin: 0 auto;
+    padding: 0 calc($spacing-unit/2);
+    flex-direction: column;
+    align-items: center;
   }
 }

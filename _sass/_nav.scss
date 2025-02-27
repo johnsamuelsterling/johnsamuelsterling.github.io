@@ -1,6 +1,3 @@
-@use "_vars" as *;
-@use "sass:color";
-
 .page-header {
   border-top: 6px solid $brand-color;
   padding-top: 6px;
@@ -24,7 +21,7 @@ nav {
     margin: 0 0.3em;
     display: inline-block;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: $bold-font-weight;
 
     opacity: 0.75;
     border-bottom: 1px solid transparent;
@@ -34,11 +31,12 @@ nav {
     &:last-child {
       padding-right: 0;
     }
-    &[aria-current] {
+    &.active {
       border-bottom-color: #333;
       opacity: 1;
     }
     &:hover {
+      color: #333;
       text-decoration: none;
 
       opacity: 1;
@@ -55,7 +53,7 @@ nav {
   }
 
   .site-title {
-    font-weight: 500;
+    font-weight: $bold-font-weight;
     margin-top: 8px;
     padding: 0;
     margin-left: 0;
@@ -123,12 +121,12 @@ nav {
 
       &:hover {
         border-color: transparent;
-        background: color.adjust($brand-color, $lightness: 55%);
+        background: lighten($brand-color, 55%);
       }
 
-      &[aria-current] {
+      &.active {
         border-color: transparent;
-        background: color.adjust($brand-color, $lightness: 50%);
+        background: lighten($brand-color, 50%);
         border-radius: 3px;
       }
     }
