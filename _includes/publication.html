@@ -26,12 +26,6 @@
     </p>
   {% endif %}
 
-  {% if pub.summary %}
-    <a href="https://bsky.app/intent/compose?text={{ pub.summary }} (via @domoritz.de)" class="share">
-      <i class="fa-brands fa-bluesky" aria-hidden="true"></i> <span class="message">{{ pub.summary }}</span>
-    </a>
-  {% endif %}
-
   {% if pub.awards %}
     <div class="awards">
       {% for award in pub.awards %}{{ award }}{% unless forloop.last %}, {% endunless %}
