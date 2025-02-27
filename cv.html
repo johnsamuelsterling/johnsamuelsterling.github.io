@@ -271,6 +271,12 @@ title: CV
   <h3 style>{{ service.title }} {% if service.at %} at {{ service.at }} {% endif %}</h3>
   <span class="right">{{ service.location }}</span>
     </div>
+    <p>
+      {% for des in service.description %}
+        <span>{{ des | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% unless forloop.last %}<br/>{% endunless %}
+      {% endfor %}
+    </div> {% unless forloop.last %}<br/>{% endunless %}
+    {% endfor %}
   </div>
   {% unless forloop.last %}<br/>{% endunless %}
   {% endif %}
