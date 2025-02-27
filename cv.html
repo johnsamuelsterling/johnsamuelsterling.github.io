@@ -108,14 +108,14 @@ title: CV
     <span class="line"></span>
   </div>
 
-  {% assign talktypes = site.data.talks | group_by:"type" %}
+ <!-- {% assign talktypes = site.data.talks | group_by:"type" %}
   {% for type in talktypes %}{% if type.items[0].hide == nil %}
   {% assign talkyears = type.items | group_by_exp: "talk", "talk.date | date: '%Y'" %}
   <h3 class="pub-type">{{ type.name }}</h3>
   {% for year in talkyears %}
 
-  {% assign sorted_talks = year.items %}
-  {% for talk in sorted_talks %}{% if talk.hide==nil%}
+ {% assign sorted_talks = year.items %}
+  {% for talk in sorted_talks %}{% if talk.hide==nil%}-->
   <div class="date-container">
     {% if forloop.first %} <time datetime="{{ talk.date }}">{{ talk.date | date: "%Y %b" }}</time> {% else %} <time datetime="{{ talk.date }}">{{ talk.date | date: "%b" }}</time> {% endif %} 
     <span class="fill">{{ talk.location }}{% if talk.city %}, <small class="muted">{{ talk.city }}</small>{% endif %}</span>

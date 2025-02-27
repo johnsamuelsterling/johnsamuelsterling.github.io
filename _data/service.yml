@@ -1,15 +1,30 @@
 
-- position: Advisor
-  at: Auburn Department of Mathematics and Statistics Directed Reading Program 2024-2025
-- position: Volunteer
+- title: Mentor
+  at: Auburn Directed Reading Program
+  location: Auburn, AL
+  description: "Guided two students through advanced study in measure theory and algebra."
+  years: Spring 2024, Fall 2024
+- title: Volunteer
   at: Mathematical Puzzle Program 2025
+  location: Auburn, AL
   url: https://www.auburn.edu/cosam/outreach/stem_outreach/programs/mapp_challenge/index.htm
-- position: Presenter
+  years: Spring 2025
+- title: Presenter
   at: Destination STEM 2024
+  location: Auburn, AL
   url: https://www.auburn.edu/cosam/outreach/stem_outreach/programs/destination-stem/index.htm
-- position: Judge
+  years: Fall 2024
+- title: Judge
   at: Alabama Science and Engineering Fair
+  location: Auburn, AL
   url: https://www.auburn.edu/cosam/outreach/stem_outreach/programs/asef/index.htm
-- position: Co-organizer
+  years: Spring 2024
+- title: Co-organizer
   at: UAH Putnam Club
+  location: Huntsville, AL
+  years: 2022
+- title: Math Tutor
+  at: Danville Middle Talented and Gifted
+  location: Danville, AL
+  years: 2018-2020
 
