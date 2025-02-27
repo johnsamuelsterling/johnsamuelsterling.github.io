@@ -161,10 +161,14 @@ title: CV
     <span class="date"> {% for class in title.items %} {{ class.year | replace: "-", "–"  }}</span>
     <h3>{{ title.name }}<br>
       {% endfor %} 
-      <span style="flex: 1"> {{ recentcourse.role }}. {{ recentcourse.roledescription}} </span>
+      <span style="font-variant:small-caps"> {{ recentcourse.role }} {{ }} </span>
       </h3>
       <span class="right">{{ recentcourse.location }}</span>
     </div>
+    <p>
+    {% for des in recentcourse.roledescription %}
+      <span>{{ des | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% unless forloop.last %}<br/>{% endunless %}
+    {% endfor %}
   </div> {% unless forloop.last %}<br/>{% endunless %}
   {% endfor %}
 
