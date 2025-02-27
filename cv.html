@@ -67,91 +67,6 @@ title: CV
   </p>
   {% endfor %}
 
-  <div class="line-container">
-    <h2>Awards & Grants</h2>
-    <span class="line"></span>
-  </div>
-
-  {% assign awards = site.data.awards | sort: 'years' | reverse %}
-  {% for award in awards %}{% if award.hide == nil %}
-  <div class="date-container">
-    <span class="date">{{ award.years }}</span>
-    <span class="fill">{{ award.name }}{% if award.sponsor %}, <small class="muted"> <em>{{ award.sponsor }}</em> </small>{% endif %}</span>
-    {% if award.link or award.article %}
-    <div class="extra-links">
-      {% if award.link %}
-        <a href="{{ award.link }}">
-          <i class="fas fa-link" aria-hidden="true"></i> Project
-        </a>
-      {% endif %}
-      {% if award.article %}
-        <a href="{{ award.article }}">
-          <i class="fas fa-newspaper" aria-hidden="true"></i> Article
-        </a>
-      {% endif %}
-    </div>
-  {% endif %} 
-  </div>
-  {% if award.short-description %}
-  <div class="date-container">
-    <span class="date"></span>
-    <span class="fill"> <small> {{ award.short-description }} </small></span>
-  </div>
-  {% endif %}
-  {% endif %}
-  {% endfor %}
-
-  {% comment %}
-  <div class="line-container">
-    <h2>Honors & Awards</h2>
-    <span class="line"></span>
-  </div>
-  {% for award in site.data.awards %}{% if award.hide == nil %}
-  <article>
-    <div class="date-container">
-      <span class="date">{{ award.years | replace: "-", "–" }}</span>
-      <h3>{{ award.name }}</h3>
-      <span class="right">{{ award.sponsor }}</span>
-    </div>
-    <div>
-      {{ award.description }}
-      {% if award.link or award.article %}
-      <div class="extra-links">
-        {% if award.link %}
-          <a href="{{ award.link }}">
-            <i class="fas fa-link" aria-hidden="true"></i> Project
-          </a>
-        {% endif %}
-        {% if award.article %}
-          <a href="{{ award.article }}">
-            <i class="fas fa-newspaper" aria-hidden="true"></i> Article
-          </a>
-        {% endif %}
-      </div>
-    {% endif %}
-    </div>
-    <br>
-    
-  </article>
-  {% endif %}
-  {% endfor %}
-  {% endcomment %}
-
-
-  {% comment %}
-  {% for grant in site.data.grants %}
-  {% if grant.hide==nil %}
-  <h3>{{ grant.name }}</h3>
-  <article>
-    <div class="date-container">
-      <span class="date">{{grant.years | replace: "-", "–" }}</span>
-      <span style="flex: 1">{{ grant.description | markdownify }}</span>
-    </div>
-  </article>
-  {% endif %}
-  {% endfor %}
-  {% endcomment %}
-
 
   <div class="line-container">
     <h2>Papers <a href="{{ '/publications/' | absolute_url }}">[Interactive Version]</a></h2>
@@ -251,6 +166,91 @@ title: CV
     </div>
   </div> {% unless forloop.last %}<br/>{% endunless %}
   {% endfor %}
+
+  <div class="line-container">
+    <h2>Awards & Grants</h2>
+    <span class="line"></span>
+  </div>
+
+  {% assign awards = site.data.awards | sort: 'years' | reverse %}
+  {% for award in awards %}{% if award.hide == nil %}
+  <div class="date-container">
+    <span class="date">{{ award.years }}</span>
+    <span class="fill">{{ award.name }}{% if award.sponsor %}, <small class="muted"> <em>{{ award.sponsor }}</em> </small>{% endif %}</span>
+    {% if award.link or award.article %}
+    <div class="extra-links">
+      {% if award.link %}
+        <a href="{{ award.link }}">
+          <i class="fas fa-link" aria-hidden="true"></i> Project
+        </a>
+      {% endif %}
+      {% if award.article %}
+        <a href="{{ award.article }}">
+          <i class="fas fa-newspaper" aria-hidden="true"></i> Article
+        </a>
+      {% endif %}
+    </div>
+  {% endif %} 
+  </div>
+  {% if award.short-description %}
+  <div class="date-container">
+    <span class="date"></span>
+    <span class="fill"> <small> {{ award.short-description }} </small></span>
+  </div>
+  {% endif %}
+  {% endif %}
+  {% endfor %}
+
+  {% comment %}
+  <div class="line-container">
+    <h2>Honors & Awards</h2>
+    <span class="line"></span>
+  </div>
+  {% for award in site.data.awards %}{% if award.hide == nil %}
+  <article>
+    <div class="date-container">
+      <span class="date">{{ award.years | replace: "-", "–" }}</span>
+      <h3>{{ award.name }}</h3>
+      <span class="right">{{ award.sponsor }}</span>
+    </div>
+    <div>
+      {{ award.description }}
+      {% if award.link or award.article %}
+      <div class="extra-links">
+        {% if award.link %}
+          <a href="{{ award.link }}">
+            <i class="fas fa-link" aria-hidden="true"></i> Project
+          </a>
+        {% endif %}
+        {% if award.article %}
+          <a href="{{ award.article }}">
+            <i class="fas fa-newspaper" aria-hidden="true"></i> Article
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+    </div>
+    <br>
+    
+  </article>
+  {% endif %}
+  {% endfor %}
+  {% endcomment %}
+
+
+  {% comment %}
+  {% for grant in site.data.grants %}
+  {% if grant.hide==nil %}
+  <h3>{{ grant.name }}</h3>
+  <article>
+    <div class="date-container">
+      <span class="date">{{grant.years | replace: "-", "–" }}</span>
+      <span style="flex: 1">{{ grant.description | markdownify }}</span>
+    </div>
+  </article>
+  {% endif %}
+  {% endfor %}
+  {% endcomment %}
 
   <div class="line-container">
     <h2>Organizing</h2>
