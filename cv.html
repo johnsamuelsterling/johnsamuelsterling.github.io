@@ -24,7 +24,7 @@ title: CV
     </div> 
   </span>
   <span class="header-columns">
-    <b>Research Interests:</b> Algebraic geometry, commutative algebra, and their applications to data science.
+    <b>Research Interests:</b> Algebraic topology, Vietoris-Rips and Čech complexes, persistent homology, and combinatorial topology.
   </span>
 
   <div class="line-container">
@@ -158,7 +158,7 @@ title: CV
     <span class="line"></span>
   </div>
 
-  {% assign types = "Journal|Preprint" | split: "|" %}
+ <!-- {% assign types = "Journal|Preprint" | split: "|" %}
   {% for type in types %}
     {% assign counter = 1 %}
     {% for pub in site.data.publications %}
@@ -169,7 +169,7 @@ title: CV
     
     <h3 class="pub-type">
       {{ type }}
-    </h3>
+    </h3>-->
 
     {% for pub in site.data.publications %}
       {% if pub.type[0] == type %}
@@ -315,15 +315,6 @@ title: CV
   {% endif %}
   {% endfor %}
 
-  <div class="line-container">
-    <h2>Referee Work</h2>
-    <span class="line"></span>
-  </div>
-
-  <div>
-  {% assign counter = 1 %}
-  {% for referee in site.data.referee %}{% if counter != 1 %}, {% endif %}{{ referee.journal }}{% assign counter = counter | plus: 1 %}{% endfor %}
-  </div>
 
   <div class="line-container">
     <h2>Work Experience</h2> 
