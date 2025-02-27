@@ -159,9 +159,9 @@ title: CV
   {% assign recentcourse = title.items[-1] %}
   <div class="no-break">
     <h3 style="margin-left: 90px">{{ title.name }}</h3> 
-    <span class="date"> {% for class in title.items %} {{ class.year | replace: "-", "–"  }}
+    <span class="date"> {% for class in title.items %} {{ class.year | replace: "-", "–"  }}</span>
     <div class="date-container"></div>
-      <br> {% endfor %} </span>
+      <br> {% endfor %} 
       <span style="flex: 1"> {{ recentcourse.role }}. {{ recentcourse.roledescription}} </span>
       <span class="right">{{ recentcourse.location }}</span>
     </div>
