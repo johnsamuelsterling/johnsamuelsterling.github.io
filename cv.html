@@ -272,12 +272,6 @@ title: CV
   <span class="right">{{ service.location }}</span>
     </div>
   </div>
-  <p>
-    {% for des in service.description %}
-      <span>{{ des | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% unless forloop.last %}<br/>{% endunless %}
-    {% endfor %}
-  </div> {% unless forloop.last %}<br/>{% endunless %}
-  {% endfor %}
   {% unless forloop.last %}<br/>{% endunless %}
   {% endif %}
   {% endfor %}
