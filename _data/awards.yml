@@ -1,8 +1,3 @@
 - name: Visualization Significant New Researcher Award
   years: 2024
   description: "For impactful work in the development of software infrastructure that has influenced both research and practice."
-- name: AMS Graduate Student Travel Grant ($1,430)
-  years: 2023
-  sponsor: University of Wisconsin-Madison
-  description: These grants are available to all Graduate Level (Masters, and PhD) students in the Mathematical Sciences. The grant will cover the JMM registration fee at the Graduate Student rate.
-  hide: true
