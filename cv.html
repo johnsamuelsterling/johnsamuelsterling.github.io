@@ -270,8 +270,8 @@ title: CV
   <span class="date">{{service.years | replace: "-", "–" }}</span>
   <h3 style>{{ service.title }} {% if service.at %} at {{ service.at }} {% endif %}</h3>
   <span class="right">{{ service.location }}</span>
+  {{ service.description }}
     </div>
-    {{ service.description }}
   </div>
   {% unless forloop.last %}<br/>{% endunless %}
   {% endif %}
