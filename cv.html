@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 ---
 
-<small class="live-link">Last updated in <time datetime="{{ site.time }}">{{ site.time | date: '%B %Y'}}</time>. Get the latest version at <a href="{{ '/cv' | absolute_url }}">johndcobb.github.io/cv/</a>.</small>
+<small class="live-link">Last updated in <time datetime="{{ site.time }}">{{ site.time | date: '%B %Y'}}</time>. Get the latest version at <a href="{{ '/cv' | absolute_url }}">johnsamuelsterling.github.io/cv/</a>.</small>
 
 <section class="container">
   <div class="button-container">
@@ -108,11 +108,11 @@ title: CV
     <span class="line"></span>
   </div>
 
- <!-- {% assign talktypes = site.data.talks | group_by:"type" %}
+  {% assign talktypes = site.data.talks | group_by:"type" %}
   {% for type in talktypes %}{% if type.items[0].hide == nil %}
   {% assign talkyears = type.items | group_by_exp: "talk", "talk.date | date: '%Y'" %}
   <h3 class="pub-type">{{ type.name }}</h3>
-  {% for year in talkyears %}-->
+  {% for year in talkyears %}
 
  {% assign sorted_talks = year.items %}
   {% for talk in sorted_talks %}{% if talk.hide==nil%}
