@@ -21,7 +21,7 @@
   description: This page organizes calculus III discussion sections 343 and 345 running in Spring 2023.
   roledescription: Prepared and taught lectures. Created and graded assignments.
 - title: "MATH 2660: Linear Algebra"
-  panel: false
+  panel: true
   type: Past
   role: Teaching Assistant
   professor: Douglas Leonard

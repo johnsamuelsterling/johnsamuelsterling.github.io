@@ -169,11 +169,11 @@ title: CV
     
     <h3 class="pub-type">
       {{ type }}
-    </h3>-->
+    </h3>
 
     {% for pub in site.data.publications %}
       {% if pub.type[0] == type %}
-        {% assign counter = counter | minus: 1 %}
+        {% assign counter = counter | minus: 1 %}-->
         <div class="cv-pub">
           <div class="ref-container">{{ type | slice: 0 }}{{ counter }}</div>
           <h4>{% if pub.pdf %}<a href="{{ pub.pdf }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{%endif%}</h4>
