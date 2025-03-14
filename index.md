@@ -18,7 +18,7 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I am a second year graduate student at [Auburn University](https://www.auburn.edu/cosam/departments/math/) studying under Dr. Ziqin Feng. I earned a B.S. in Mathematics alonside a minor in Philosophy from the [University of Alabama in Huntsville](https://www.uah.edu/). Additionally, I have been a research associate at the [Rotorcraft Systems Engineering and Simulation Center](https://www.uah.edu/rsesc). Details are in my [CV]({{ "/cv/" | relative_url }}).
+I am a second year graduate student at [Auburn University](https://www.auburn.edu/cosam/departments/math/) studying under Dr. Ziqin Feng. I earned a B.S. in Mathematics alongside a minor in Philosophy from the [University of Alabama in Huntsville](https://www.uah.edu/). Additionally, I have been a research associate at the [Rotorcraft Systems Engineering and Simulation Center](https://www.uah.edu/rsesc). Details are in my [CV]({{ "/cv/" | relative_url }}).
 
 My research interests lie in topology, specifically algebraic and combinatorial topology. I am particularly interested in the study of Čech and Vietoris-Rips complexes as well as persistent homology. 
 
