@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "In progress"
-description: .
+description: In progress
 permalink: /Easley-intro/
 ---
 
