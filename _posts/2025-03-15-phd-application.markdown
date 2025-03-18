@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "In progress"
-description: Applying for a PhD in mathematics
-permalink: /phd-application/
+description: .
+permalink: /Easley-intro/
 ---
 
 In progress
