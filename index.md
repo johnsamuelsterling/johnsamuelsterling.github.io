@@ -35,7 +35,7 @@ Find me on [GitHub](https://github.com/johnsamuelsterling) and [LinkedIn](https:
 
 {:.no-list}
 * <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-* Parker Hall, Office 142
+* Purdue MATH Building
 </div>
 </div>
 
