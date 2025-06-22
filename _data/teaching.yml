@@ -4,7 +4,7 @@
   type: Past
   panel: true
   highlight: 1
-  image: Calc1meme.png
+  image: JohnSCalc1.png
   url: "/teaching/217Spring2024"
   professor: Samir Raouafi
   location: Auburn University
@@ -17,7 +17,7 @@
   year: Fall 2024
   location: Auburn University
   url: "/teaching/234Spring2023"
-  image: calculus3.jpg
+  image: EmmaSMath1000.png
   description: Fall 2024
   roledescription: Prepared and taught lectures. Created and graded assignments.
 - title: "MATH 2660: Linear Algebra"
@@ -28,7 +28,7 @@
   year: Spring 2024
   location: Auburn University
   url: "/teaching/234Fall2022"
-  image: linearalgebrastretch.jpg
+  image: YutiDLinearAlgStretch.jpg
   description: Spring 2024
   roledescription: Hold weekly problem solving sessions and office hours.
 - title: "MATH 1120: Precalculus Algebra"
