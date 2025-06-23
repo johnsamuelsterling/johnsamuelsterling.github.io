@@ -25,3 +25,7 @@ class: projects
 {% endfor %}
 </div>
 {% endfor %}
+
+<div class="info-box">
+This is a small box of text you'd like to highlight.
+</div>
