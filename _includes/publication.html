@@ -1,5 +1,28 @@
 {% capture anchor %}{% if pub.id %}{{ pub.id }}{% else %}{{ (pub.title | slugify) }}{% endif %}{% endcapture %}
 
+<div id="facets" class="hidden">
+  <div class="facet" id="venue_tags">
+    <h4>Venue</h4>
+    <ul></ul>
+  </div>
+  <div class="facet" id="authors">
+    <h4>Author</h4>
+    <ul></ul>
+  </div>
+  <div class="facet" id="tags">
+    <h4>Tag</h4>
+    <ul></ul>
+  </div>
+  <div class="facet" id="type">
+    <h4>Type</h4>
+    <ul></ul>
+  </div>
+  <div class="facet" id="highlight">
+    <h4>Highlights</h4>
+    <ul></ul>
+  </div>
+</div>
+
 <div class="publication" data-pub='{{ pub | jsonify | escape }}'>
   <h3 id="{{ anchor }}">{% for award in pub.awards %}<i class="fas fa-{% if award == "Best Paper Award" %}trophy{% else %}award{% endif %} award-icon" title="{{ award }}"></i> {% endfor %}{{ pub.title }}</h3>
   <div class="authors">
