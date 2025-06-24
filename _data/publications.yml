@@ -20,7 +20,7 @@
     - Preprint
 
 - id: VRTorusGridsMastersThesis
-  title: "Vietoris-Rips Complexes of Torus Grids"
+  title: "Vietoris-Rips Complexes of Torus Grids (Master's Thesis)"
   year: 2025
   authors:
     - John Sterling
@@ -28,7 +28,7 @@
   pdf: https://etd.auburn.edu/bitstream/handle/10415/9659/Vietoris_Rips_Complexes_of_Torus_Grids__Master_s_Thesis.pdf?sequence=2&isAllowed=y
   arxiv: 
   highlight: false
-  description: Further exposition and clarification of results from "Vietoris-Rips Complexes of Torus Grids."
+  description: Further exposition and clarification of results from ["Vietoris-Rips Complexes of Torus Grids."](https://arxiv.org/pdf/2502.07134)
   tags:
     - Algebraic Topology
     - Vietoris-Rips complexes
