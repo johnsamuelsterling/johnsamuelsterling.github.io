@@ -7,6 +7,11 @@ class: pubs
 
 {:.hidden}
 # Publications
+<style>
+  .pubs h2.year {
+    margin-top: 0.5em !important;
+  }
+</style>
 
 <div id="facets" class="hidden">
   <div class="facet" id="venue_tags">
