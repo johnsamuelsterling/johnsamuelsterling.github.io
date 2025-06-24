@@ -150,17 +150,17 @@
   }
 
   var ftSearch = document.getElementById("ft-search");
+if (ftSearch) {
   ftSearch.oninput = function() {
     var val = ftSearch.value;
-
     if (val) {
       query.query = val;
     } else {
       delete query.query;
     }
-
     search(query);
-  }
+  };
+}
 
   function search(query) {
     console.time("Search");
