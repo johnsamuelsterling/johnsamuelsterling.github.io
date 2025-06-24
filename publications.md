@@ -8,15 +8,6 @@ class: pubs
 {:.hidden}
 # Publications
 
-<style>
-  #only-highlight,
-  #clear-filters {
-    margin: 0 !important;
-    padding: 0 !important;
-    background: rgba(255, 0, 0, 0.2); /* TEMPORARY to see it working */
-  }
-</style>
-
 <div id="facets" class="hidden">
   <div class="facet" id="venue_tags">
     <strong>Venue</strong>
