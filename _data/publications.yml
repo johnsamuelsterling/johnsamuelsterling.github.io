@@ -7,7 +7,7 @@
     - Hector Barriga-Acosta
     - Ziqin Feng
     - John Sterling
-  venue: Accepted at Mediterranean Journal of Mathematics, August
+  venue_tags: Accepted at Mediterranean Journal of Mathematics, August
   pdf: https://arxiv.org/pdf/2502.07134
   arxiv: "2502.07134"
   highlight: true 
@@ -24,7 +24,7 @@
   year: 2025
   authors:
     - John Sterling
-  venue: 
+  venue_tags: 
   pdf: https://etd.auburn.edu/bitstream/handle/10415/9659/Vietoris_Rips_Complexes_of_Torus_Grids__Master_s_Thesis.pdf?sequence=2&isAllowed=y
   arxiv: 
   highlight: false
