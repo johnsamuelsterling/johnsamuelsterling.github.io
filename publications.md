@@ -14,7 +14,7 @@ class: pubs
 </style>
 
 <div id="facets" class="hidden">
-  <div class="facet" id="venue">
+  <div class="facet" id="venue_tags">
     <strong>Venue</strong>
     <ul></ul>
   </div>
