@@ -124,49 +124,54 @@ title: CV
 {% endif %}
 
   <div class="line-container">
-    <h2>Talks  <a href="{{ '/talks/' | absolute_url }}">[Interactive Version]</a></h2>
-    <span class="line"></span>
-  </div>
+  <h2>Talks  <a href="{{ '/talks/' | absolute_url }}">[Interactive Version]</a></h2>
+  <span class="line"></span>
+</div>
 
-  {% assign talktypes = site.data.talks | group_by:"type" %}
-  {% for type in talktypes %}{% if type.items[0].hide == nil %}
-  {% assign talkyears = type.items | group_by_exp: "talk", "talk.date | date: '%Y'" %}
-  <h3 class="pub-type">{{ type.name }}</h3>
-  {% for year in talkyears %}
+{% assign talktypes = site.data.talks | group_by:"type" %}
+{% for type in talktypes %}
+  {% if type.items[0].hide == nil %}
+    {% assign talkyears = type.items | group_by_exp: "talk", "talk.date | date: '%Y'" %}
+    <h3 class="pub-type">{{ type.name }}</h3>
 
- {% assign sorted_talks = year.items %}
-  {% for talk in sorted_talks %}{% if talk.hide==nil%}
-  <div class="date-container">
-    {% if forloop.first %} <time datetime="{{ talk.date }}">{{ talk.date | date: "%Y %b" }}</time> {% else %} <time datetime="{{ talk.date }}">{{ talk.date | date: "%b" }}</time> {% endif %} 
-    <span class="fill">{{ talk.location }}{% if talk.city %}, <small class="muted">{{ talk.city }}</small>{% endif %}</span>
-  </div>
-  {% endif %} {% endfor %}
-  {% endfor %}
+    {% for year in talkyears %}
+      {%- comment -%} Sort newest first within each year {%- endcomment -%}
+      {% assign sorted_talks = year.items | sort: "date" | reverse %}
+
+      {% for talk in sorted_talks %}
+        {% if talk.hide == nil %}
+          <div class="date-container">
+            {% if forloop.first %}
+              <time datetime="{{ talk.date }}">{{ talk.date | date: "%Y %b" }}</time>
+            {% else %}
+              <time datetime="{{ talk.date }}">{{ talk.date | date: "%b" }}</time>
+            {% endif %}
+
+            <span class="fill">
+              {%- assign title = talk.title | default: "" -%}
+              {%- assign link  = talk.link  | default: talk.slides | default: talk.url | default: "" -%}
+
+              {%- if title != "" -%}
+                <strong>
+                  {%- if link != "" -%}
+                    <a href="{{ link }}">{{ title }}</a>
+                  {%- else -%}
+                    {{ title }}
+                  {%- endif -%}
+                </strong>
+                &nbsp;—&nbsp;
+              {%- endif -%}
+
+              {{ talk.location }}
+              {% if talk.city %}, <small class="muted">{{ talk.city }}</small>{% endif %}
+            </span>
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
   {% endif %}
-  {% endfor %}
+{% endfor %}
 
-  {% comment %}
-  {% assign talktitles = site.data.talks | group_by:"title" %}
-  {% for title in talktitles %}{% if title.items[0].hide == nil %}
-    <h3>{{ title.name }}</h3>
-    {% assign sorted_talks = title.items | sort: 'date' | reverse %}
-    {% for talk in sorted_talks %}
-      <div class="date-container">
-        <time datetime="{{ talk.date }}">{{ talk.date | date: "%Y %b" }}</time>
-        <span class="fill">{{ talk.location }}{% if talk.city %}, <small class="muted">{{ talk.city }}</small>{% endif %}</span>
-      </div>
-  {% endfor %}
-  {% endif %}{% endfor %}
-  {% endcomment %}
-
-  {% comment %}
-  {% for talk in site.data.talks %}{% if talk.hide == nil %}
-    <div class="date-container">
-      <time datetime="{{ talk.date }}">{{ talk.date | date: "%Y %b" }}</time>
-      <span class="fill">{{ talk.location }}{% if talk.city %}, <small class="muted"> <em>{{ talk.city }}</em> </small>{% endif %}</span>
-    </div>
-  {% endif %}{% endfor %}
-  {% endcomment %}
 
 
   <div class="line-container">
