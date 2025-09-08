@@ -11,6 +11,7 @@
   venue: Mediterranean Journal of Mathematics
   pdf: https://arxiv.org/pdf/2502.07134
   arxiv: "2502.07134"
+  doi: 10.1007/s00009-025-02945-9
   highlight: true 
   description: Partial classification of the homotopy types of Vietoris-Rips complexes of torus grids.
   tags:
