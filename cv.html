@@ -123,7 +123,7 @@ title: CV
 
 {% endif %}
 
-  <div class="line-container">
+ <div class="line-container">
   <h2>Talks  <a href="{{ '/talks/' | absolute_url }}">[Interactive Version]</a></h2>
   <span class="line"></span>
 </div>
@@ -135,7 +135,6 @@ title: CV
     <h3 class="pub-type">{{ type.name }}</h3>
 
     {% for year in talkyears %}
-      {%- comment -%} Sort newest first within each year {%- endcomment -%}
       {% assign sorted_talks = year.items | sort: "date" | reverse %}
 
       {% for talk in sorted_talks %}
@@ -148,19 +147,17 @@ title: CV
             {% endif %}
 
             <span class="fill">
-              {%- assign title = talk.title | default: "" -%}
-              {%- assign link  = talk.link  | default: talk.slides | default: talk.url | default: "" -%}
+              {% assign title = talk.title | default: "" %}
+              {% assign link  = talk.link | default: talk.slides | default: talk.url | default: "" %}
 
-              {%- if title != "" -%}
-                <strong>
-                  {%- if link != "" -%}
-                    <a href="{{ link }}">{{ title }}</a>
-                  {%- else -%}
-                    {{ title }}
-                  {%- endif -%}
-                </strong>
-                &nbsp;—&nbsp;
-              {%- endif -%}
+              {% if title != "" %}
+                {% if link != "" %}
+                  <a href="{{ link }}">{{ title }}</a>
+                {% else %}
+                  {{ title }}
+                {% endif %}
+                — 
+              {% endif %}
 
               {{ talk.location }}
               {% if talk.city %}, <small class="muted">{{ talk.city }}</small>{% endif %}
@@ -171,7 +168,6 @@ title: CV
     {% endfor %}
   {% endif %}
 {% endfor %}
-
 
 
   <div class="line-container">
