@@ -1,13 +1,7 @@
-- name: UAH President's List
-  years: 2018-2022
+- name: President's List
+  years: 2020-2022
   sponsor: UAH
   short-description: Awarded every semester.
-- name: Outstanding Undergraduate Achievement in Mathematics
-  years: 2022
-  sponsor: UAH
-- name: Undergraduate Physics Award
-  years: 2018
-  short-description: Awarded to students with the highest grade average in Physics I & II across all sections.
 - name: Undergraduate Astronomy Award
   years: 2018
-  short-description: Awarded to students with the highest grade average in Astronomy I & II across all sections.
+  short-description: Awarded to student with the highest grade average in Astronomy across all sections.
