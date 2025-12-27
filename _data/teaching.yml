@@ -9,7 +9,7 @@
   professor: Philip Mummert
   location: Purdue University
   description: Fall 2025
-  roledescription: Hold weekly recitation sessions
+  roledescription: Held three weekly recitation sessions and office hours.
 - title: "MATH 1610: Calculus I"
   role: "Recitation Leader"
   year: Spring 2025
@@ -21,7 +21,7 @@
   professor: Samir Raouafi
   location: Auburn University
   description: Spring 2025
-  roledescription: Hold recitation sessions and office hours twice weekly.
+  roledescription: Held recitation sessions and office hours twice weekly.
 - title: "MATH 1000: College Algebra"
   panel: true
   type: Past
@@ -42,7 +42,7 @@
   url: "/teaching/234Fall2022"
   image: YutiDLinearAlgStretch.jpg
   description: Spring 2024
-  roledescription: Hold weekly problem solving sessions and office hours.
+  roledescription: Held weekly problem solving sessions and office hours.
 - title: "MATH 1120: Precalculus Algebra"
   panel: true
   professor: Chris Wells
@@ -53,4 +53,4 @@
   url: "/teaching/221Fall2021"
   image: calculus1.jpg
   description: Fall 2023
-  roledescription: Hold weekly problem solving sessions and office hours.
+  roledescription: Held weekly problem solving sessions and office hours.
