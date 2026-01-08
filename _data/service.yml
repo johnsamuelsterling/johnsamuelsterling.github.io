@@ -6,18 +6,7 @@
 - title: Mentor
   at: Auburn Mathematics Directed Reading Program
   location: Auburn, AL
-  description: "Guided two students through advanced study in measure theory."
-  years: Spring 2024, Fall 2024
-- title: Volunteer
-  at: Mathematical Puzzle Program 2025
-  location: Auburn, AL
-  description: "Guided two students through advanced study in measure theory and algebra."
-  url: https://www.auburn.edu/cosam/outreach/stem_outreach/programs/mapp_challenge/index.htm
-  years: Spring 2025
-- title: Presenter
-  at: Destination STEM 2024
-  location: Auburn, AL
-  url: https://www.auburn.edu/cosam/outreach/stem_outreach/programs/destination-stem/index.htm
+  description: "Guided student through advanced study in linear algebra."
   years: Fall 2024
 - title: Judge
   at: Alabama Science and Engineering Fair
@@ -29,7 +18,7 @@
   location: Huntsville, AL
   years: 2022
 - title: Math Tutor
-  at: Danville Middle Talented and Gifted
+  at: Danville Middle 
   location: Danville, AL
   years: 2018-2020
 
