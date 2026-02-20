@@ -9,5 +9,5 @@ permalink: /teaching/261Spring2026/
 ## Quiz solution PDFs
 
 - [Quiz 03](/teaching/261Spring2026/quiz-solutions/Quiz_3_Solns.pdf)
-- [Quiz 04]/teaching/261Spring2026/(quiz-solutions/Quiz_4_Solns(1).pdf)
+- [Quiz 04](/teaching/261Spring2026/quiz-solutions/Quiz_4_Solns.pdf)
 - [Quiz 05](/teaching/261Spring2026/quiz-solutions/Quiz_5_Solns.pdf)
