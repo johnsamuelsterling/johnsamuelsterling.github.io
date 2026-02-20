@@ -1,7 +1,19 @@
 - title: "MATH 261: Calculus III"
   role: "Recitation Leader"
-  year: Fall 2025
+  year: Spring 2026
   type: Present
+  panel: true
+  highlight: 1
+  image: 
+  url: "/teaching/261Spring2026"
+  professor: Mahesh Sunkula
+  location: Purdue University
+  description: Spring 2026
+  roledescription: Held three weekly recitation sessions and office hours.
+- title: "MATH 261: Calculus III"
+  role: "Recitation Leader"
+  year: Fall 2025
+  type: Past
   panel: true
   highlight: 1
   image: 

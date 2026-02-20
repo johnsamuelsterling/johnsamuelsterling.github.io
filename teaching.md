@@ -27,5 +27,5 @@ class: projects
 {% endfor %}
 
 <div class="info-box">
-All banner images on this page were created by friends I've made during my time in graduate school. Each one—except for mine—is signed in the lower left corner.
+Banner image updates are in progress.
 </div>
