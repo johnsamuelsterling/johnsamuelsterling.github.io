@@ -8,6 +8,6 @@ permalink: /teaching/261Spring2026
 
 ## Quiz solution PDFs
 
-- [Quiz 03](Quiz_3_Solns.pdf)
-- [Quiz 04](Quiz_4_Solns(1).pdf)
-- [Quiz 05](Quiz_5_Solns.pdf)
+- [Quiz 03](quiz-solutions/Quiz_3_Solns.pdf)
+- [Quiz 04](quiz-solutions/Quiz_4_Solns(1).pdf)
+- [Quiz 05](quiz-solutions/Quiz_5_Solns.pdf)
