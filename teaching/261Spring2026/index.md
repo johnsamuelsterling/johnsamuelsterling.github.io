@@ -14,3 +14,4 @@ permalink: /teaching/261Spring2026/
 - [Quiz 06](/teaching/261Spring2026/quiz-solutions/Quiz_6_Solns.pdf)
 - [Quiz 07](/teaching/261Spring2026/quiz-solutions/Quiz_7_Solns.pdf)
 - [Quiz 08](/teaching/261Spring2026/quiz-solutions/Quiz_8_Solns.pdf)
+- [Quiz 09](/teaching/261Spring2026/quiz-solutions/Quiz_9_Solns.pdf)
