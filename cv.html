@@ -170,28 +170,43 @@ title: CV
 {% endfor %}
 
 
-  <div class="line-container">
-    <h2>Teaching</h2>
-    <span class="line"></span>
+<div class="line-container">
+  <h2>Teaching</h2>
+  <span class="line"></span>
+</div>
+
+{% assign coursetitles = site.data.teaching | group_by: "title" %}
+
+{% for title in coursetitles %}
+  {% assign recentcourse = title.items[0] %}
+
+  <div class="date-container">
+
+    <span class="date">
+      {% for class in title.items %}
+        {{ class.year | replace: "-", "–" }}{% unless forloop.last %}<br>{% endunless %}
+      {% endfor %}
+    </span>
+
+    <h3>
+      {{ title.name }}<br>
+      <span style="font-variant:small-caps">
+        {{ recentcourse.role }}
+      </span>
+    </h3>
+
+    <span class="right">{{ recentcourse.location }}</span>
+
   </div>
 
-  {% assign coursetitles = site.data.teaching | group_by: "title" %} 
-  {% for title in coursetitles %}
-  {% assign recentcourse = title.items[-1] %}
-  <div class="date-container">
-    <span class="date"> {% for class in title.items %} {{ class.year | replace: "-", "–"  }}</span>
-    <h3>{{ title.name }}<br>
-      {% endfor %} 
-      <span style="font-variant:small-caps"> {{ recentcourse.role }} {{ }} </span>
-      </h3>
-      <span class="right">{{ recentcourse.location }}</span>
-    </div>
-    <p>
+  <p>
     {% for des in recentcourse.roledescription %}
       <span>{{ des | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% unless forloop.last %}<br/>{% endunless %}
     {% endfor %}
-  </div> {% unless forloop.last %}<br/>{% endunless %}
-  {% endfor %}
+  </p>
+
+  {% unless forloop.last %}<br/>{% endunless %}
+{% endfor %}
 
   <div class="line-container">
     <h2>Awards & Grants</h2>
