@@ -1,10 +1,19 @@
 - title: Mentor
   at: Purdue Mathematics Directed Reading Program
   location: West Lafayette, IN
+  student: Alperen Uraz Tasci
+  student_url: https://www.linkedin.com/in/alperenuraztasci/
+  slides: /papers/Uraz_Presentation.pdf
+  description: Focused on conformal mappings, particularly the Schwarz-Christoffel Mapping.
+  years: Spring 2026
+- title: Mentor
+  at: Purdue Mathematics Directed Reading Program
+  location: West Lafayette, IN
   student: Dhruv Jain
   student_url: https://www.linkedin.com/in/dhruvjain960/?originalSubdomain=in
-  slides: /path/to/slides.pdf
-  years: Fall 2025
+  slides: 
+  description: Focused on Elementary Algebraic Topology and Topological Data Analysis. 
+  years: Fall 2025, Spring 2026
 - title: Mentor
   at: Auburn Mathematics Directed Reading Program
   location: Auburn, AL
