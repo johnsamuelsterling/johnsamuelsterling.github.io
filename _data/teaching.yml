@@ -9,7 +9,7 @@
   professor: 
   location: Purdue University
   description: Summer 2026
-  roledescription: Prepared and taught lectures.
+  roledescription: 
 - title: "MATH 261: Calculus III"
   role: "Recitation Leader"
   year: Spring 2026
@@ -21,7 +21,7 @@
   professor: Mahesh Sunkula
   location: Purdue University
   description: Spring 2026
-  roledescription: Held three weekly recitation sessions and office hours.
+  roledescription: 
 - title: "MATH 261: Calculus III"
   role: "Recitation Leader"
   year: Fall 2025
@@ -33,7 +33,7 @@
   professor: Philip Mummert
   location: Purdue University
   description: Fall 2025
-  roledescription: Held three weekly recitation sessions and office hours.
+  roledescription: 
 - title: "MATH 1610: Calculus I"
   role: "Recitation Leader"
   year: Spring 2025
@@ -45,7 +45,7 @@
   professor: Samir Raouafi
   location: Auburn University
   description: Spring 2025
-  roledescription: Held recitation sessions and office hours twice weekly.
+  roledescription: 
 - title: "MATH 1000: College Algebra"
   panel: true
   type: Past
@@ -55,7 +55,7 @@
   url: "/teaching/234Spring2023"
   image: EmmaSMath1000Resize.png
   description: Fall 2024
-  roledescription: Prepared and taught lectures. Created and graded assignments.
+  roledescription: 
 - title: "MATH 2660: Linear Algebra"
   panel: true
   type: Past
@@ -66,7 +66,7 @@
   url: "/teaching/234Fall2022"
   image: YutiDLinearAlgStretch.jpg
   description: Spring 2024
-  roledescription: Held weekly problem solving sessions and office hours.
+  roledescription: 
 - title: "MATH 1120: Precalculus Algebra"
   panel: true
   professor: Chris Wells
@@ -77,4 +77,4 @@
   url: "/teaching/221Fall2021"
   image: calculus1.jpg
   description: Fall 2023
-  roledescription: Held weekly problem solving sessions and office hours.
+  roledescription: 
