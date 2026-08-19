@@ -2,9 +2,8 @@
   at: Purdue Mathematics Directed Reading Program
   location: West Lafayette, IN
   student: Dhruv Jain
-  student_url: https://www.linkedin.com/in/dhruvjain960/?originalSubdomain=index
-  slides:
-  description: Mentored Dhruv Jain in Elementary Algebraic Topology and Topological Data Analysis.
+  student_url: https://www.linkedin.com/in/dhruvjain960/?originalSubdomain=in
+  slides: /path/to/slides.pdf
   years: Fall 2025
 - title: Mentor
   at: Auburn Mathematics Directed Reading Program
