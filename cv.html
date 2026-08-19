@@ -302,47 +302,54 @@ title: CV
     <span class="right">{{ service.location }}</span>
   </div>
 
-  <div class="service-subcontent">
+  {% if service.student or service.description or service.slides %}
+  <div class="date-container">
+    <span class="date"></span>
 
-    {% if service.student or service.slides %}
-    <div class="service-details">
+    <div class="fill service-subcontent">
+
       {% if service.student %}
-        Student:
-        {% if service.student_url %}
-          <a
-            href="{{ service.student_url }}"
-            class="student-link"
-            target="_blank"
-            rel="noopener"
-          >
+      <div class="service-bullet">
+        <span class="service-bullet-dot">•</span>
+        <span>
+          Student:
+          {% if service.student_url %}
+            <a
+              href="{{ service.student_url }}"
+              class="student-link"
+              target="_blank"
+              rel="noopener"
+            >
+              {{ service.student }}
+              <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+            </a>
+          {% else %}
             {{ service.student }}
-            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
-          </a>
-        {% else %}
-          {{ service.student }}
-        {% endif %}
+          {% endif %}
+
+          {% if service.slides %}
+            &nbsp;·&nbsp;
+            <a href="{{ service.slides }}" target="_blank" rel="noopener">
+              <i class="fas fa-file-powerpoint" aria-hidden="true"></i>
+              Slides
+            </a>
+          {% endif %}
+        </span>
+      </div>
       {% endif %}
 
-      {% if service.student and service.slides %}
-        &nbsp;·&nbsp;
+      {% if service.description %}
+      <div class="service-bullet">
+        <span class="service-bullet-dot">•</span>
+        <span>
+          {{ service.description | markdownify | remove: '<p>' | remove: '</p>' }}
+        </span>
+      </div>
       {% endif %}
 
-      {% if service.slides %}
-        <a href="{{ service.slides }}" target="_blank" rel="noopener">
-          <i class="fas fa-file-powerpoint" aria-hidden="true"></i>
-          Slides
-        </a>
-      {% endif %}
     </div>
-    {% endif %}
-
-    {% if service.description %}
-    <div class="service-description">
-      {{ service.description | markdownify | remove: '<p>' | remove: '</p>' }}
-    </div>
-    {% endif %}
-
   </div>
+  {% endif %}
 
 </div>
 

@@ -206,6 +206,36 @@
         font-style: italic;
     }
 
+    /* Service & Outreach */
+
+.service-subcontent {
+    margin-top: 0.1rem;
+}
+
+.service-bullet {
+    display: flex;
+    align-items: baseline;
+    margin-top: 0.1rem;
+}
+
+.service-bullet-dot {
+    flex: 0 0 0.9rem;
+    font-size: 0.65em;
+    line-height: 1;
+}
+
+.student-link {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 500;
+}
+
+.student-link i {
+    font-size: 0.7em;
+    margin-left: 0.15em;
+}
+
+
     /* References */
 
     .refs {
