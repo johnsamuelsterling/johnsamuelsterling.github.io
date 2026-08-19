@@ -220,6 +220,23 @@
     margin: 0;
 }
 
+/* Awards & Grants */
+
+.award-subcontent {
+    margin-top: 0.05rem;
+}
+
+.award-bullet {
+    display: flex;
+    align-items: baseline;
+}
+
+.award-bullet-dot {
+    flex: 0 0 0.9rem;
+    font-size: 0.65em;
+    line-height: 1;
+}
+
     /* Service & Outreach */
 
 .service-subcontent {
