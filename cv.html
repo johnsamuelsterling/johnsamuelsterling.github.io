@@ -279,25 +279,60 @@ title: CV
   {% endcomment %}
 
 
-  <div class="line-container">
-    <h2>Service & Outreach</h2>
-    <span class="line"></span>
-  </div>
+<div class="line-container">
+  <h2>Service & Outreach</h2>
+  <span class="line"></span>
+</div>
 
-  {% for service in site.data.service %}
-  {% if service.hide==nil %}
-  <div class="no-break">    
+{% for service in site.data.service %}
+{% if service.hide == nil %}
+
+<div class="no-break">
+
   <div class="date-container">
-  <span class="date">{{service.years | replace: "-", "–" }}</span>
-  <h3 style>{{ service.title }} {% if service.at %} at {{ service.at }} {% endif %}</h3>
-  <span class="right">{{ service.location }}</span>
-    </div>
+    <span class="date">{{ service.years | replace: "-", "–" }}</span>
+
+    <h3>
+      {{ service.title }}
+      {% if service.at %}
+        at {{ service.at }}
+      {% endif %}
+    </h3>
+
+    <span class="right">{{ service.location }}</span>
   </div>
-  {% unless forloop.last %}<br/>{% endunless %}
+
+  {% if service.student or service.slides %}
+  <div class="date-container">
+    <span class="date"></span>
+
+    <span class="fill">
+      {% if service.student %}
+        Student:
+        {% if service.student_url %}
+          <a href="{{ service.student_url }}">{{ service.student }}</a>
+        {% else %}
+          {{ service.student }}
+        {% endif %}
+      {% endif %}
+
+      {% if service.student and service.slides %}
+        &nbsp;·&nbsp;
+      {% endif %}
+
+      {% if service.slides %}
+        <a href="{{ service.slides }}">
+          <i class="fas fa-file-powerpoint" aria-hidden="true"></i> Slides
+        </a>
+      {% endif %}
+    </span>
+  </div>
   {% endif %}
-  {% endfor %}
 
+</div>
 
+{% endif %}
+{% endfor %}
 
-<br> 
+<br>
 </section>
