@@ -175,37 +175,43 @@ title: CV
   <span class="line"></span>
 </div>
 
-{% assign coursetitles = site.data.teaching | group_by: "title" %}
+{% for class in site.data.teaching %}
 
-{% for title in coursetitles %}
-  {% assign recentcourse = title.items[0] %}
+<div class="no-break teaching-entry">
 
   <div class="date-container">
 
     <span class="date">
-      {% for class in title.items %}
-        {{ class.year | replace: "-", "–" }}{% unless forloop.last %}<br>{% endunless %}
-      {% endfor %}
+      {{ class.year | replace: "-", "–" }}
     </span>
 
     <h3>
-      {{ title.name }}<br>
+      {{ class.title }}<br>
       <span style="font-variant:small-caps">
-        {{ recentcourse.role }}
+        {{ class.role }}
       </span>
     </h3>
 
-    <span class="right">{{ recentcourse.location }}</span>
+    <span class="right">{{ class.location }}</span>
 
   </div>
 
-  <p>
-    {% for des in recentcourse.roledescription %}
-      <span>{{ des | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% unless forloop.last %}<br/>{% endunless %}
-    {% endfor %}
-  </p>
+  {% if class.roledescription %}
+  <div class="date-container teaching-description-row">
 
-  {% unless forloop.last %}<br/>{% endunless %}
+    <span class="date"></span>
+
+    <div class="fill teaching-description">
+      {% for des in class.roledescription %}
+        {{ des | markdownify | remove: '<p>' | remove: '</p>' }}{% unless forloop.last %}<br>{% endunless %}
+      {% endfor %}
+    </div>
+
+  </div>
+  {% endif %}
+
+</div>
+
 {% endfor %}
 
   <div class="line-container">
