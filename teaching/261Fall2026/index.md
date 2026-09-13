@@ -9,3 +9,4 @@ permalink: /teaching/261Fall2026/
 ## Quiz solution PDFs
 
 - [Quiz 01](/teaching/261Fall2026/quiz-solutions/Quiz1SolnsMA261F2026.pdf)
+- [Quiz 02](/teaching/261Fall2026/quiz-solutions/Quiz2SolnsMA261F2026.pdf)
