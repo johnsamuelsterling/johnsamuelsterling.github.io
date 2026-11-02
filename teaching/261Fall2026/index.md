@@ -14,3 +14,4 @@ permalink: /teaching/261Fall2026/
 - [Quiz 04](/teaching/261Fall2026/quiz-solutions/Quiz4SolnsMA261F2026.pdf)
 - [Quiz 05](/teaching/261Fall2026/quiz-solutions/Quiz5SolnsMA261F2026.pdf)
 - [Quiz 06](/teaching/261Fall2026/quiz-solutions/Quiz6SolnsMA261F2026.pdf)
+- [Quiz 07](/teaching/261Fall2026/quiz-solutions/Quiz7SolnsMA261F2026.pdf)
